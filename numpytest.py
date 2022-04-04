@@ -864,17 +864,30 @@ sampData = np.array(dataInAll)
 
 ###### Egg problem solve
 
-field = np.zeros([10,10])
-print(field)
+# field = np.zeros([10,10])
+# print(field)
+#
+# genarator = np.random.default_rng(1234)
+# print(genarator)
+# vals = np.round(genarator.normal(size=20),2)
+# print(vals)
+#
+# locs = genarator.choice(field.size,len(vals),replace=False)
+# print(locs)
+#
+# field.ravel()[locs]=vals
+# print(field)
 
-genarator = np.random.default_rng(1234)
-print(genarator)
-vals = np.round(genarator.normal(size=20),2)
-print(vals)
 
-locs = genarator.choice(field.size,len(vals),replace=False)
-print(locs)
 
-field.ravel()[locs]=vals
-print(field)
 
+
+#############
+
+squee = np.array([
+    [5.0,2.0,9.0],
+    [1.0,0.0,2.0],
+    [1.0,7.0,8.0]
+])
+print(squee)
+print(np.sum(squee,axis=1))
