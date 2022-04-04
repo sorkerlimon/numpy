@@ -884,10 +884,27 @@ sampData = np.array(dataInAll)
 
 #############
 
-squee = np.array([
-    [5.0,2.0,9.0],
-    [1.0,0.0,2.0],
-    [1.0,7.0,8.0]
-])
-print(squee)
-print(np.sum(squee,axis=1))
+# squee = np.array([
+#     [5.0,2.0,9.0],
+#     [1.0,0.0,2.0],
+#     [1.0,7.0,8.0]
+# ])
+# # print(squee)
+# # print(np.sum(squee,axis=1))
+# #
+# squee[0,0]=np.nan
+# # print(squee)
+# # print(np.sum(squee))
+# print(np.sum(squee,where=np.isnan(squee)))
+
+
+foo = np.array(["a","b"])
+bar = np.array(["c","d"])
+baz = np.array([["e","f"]])
+bingo = np.array([["g","h","i"]])
+bongo = np.array([["j","k"],
+                  ["l","m"]])
+
+vstack = np.vstack((foo,bar,baz))
+print(vstack)
+
