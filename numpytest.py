@@ -908,3 +908,11 @@ bongo = np.array([["j","k"],
 vstack = np.vstack((foo,bar,baz))
 print(vstack)
 
+hstack = np.hstack((baz,bingo))
+print(hstack)
+
+stack = np.stack((foo,bar),axis=0)
+print(stack)
+stack = np.stack((foo,bar),axis=1)
+print(stack)
+
