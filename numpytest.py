@@ -898,21 +898,46 @@ sampData = np.array(dataInAll)
 # print(np.sum(squee,where=np.isnan(squee)))
 
 
-foo = np.array(["a","b"])
-bar = np.array(["c","d"])
-baz = np.array([["e","f"]])
-bingo = np.array([["g","h","i"]])
-bongo = np.array([["j","k"],
-                  ["l","m"]])
+# foo = np.array(["a","b"])
+# bar = np.array(["c","d"])
+# baz = np.array([["e","f"]])
+# bingo = np.array([["g","h","i"]])
+# bongo = np.array([["j","k"],
+#                   ["l","m"]])
+#
+# vstack = np.vstack((foo,bar,baz))
+# print(vstack)
+#
+# hstack = np.hstack((baz,bingo))
+# print(hstack)
+#
+# stack = np.stack((foo,bar),axis=0)
+# print(stack)
+# stack = np.stack((foo,bar),axis=1)
+# print(stack)
 
-vstack = np.vstack((foo,bar,baz))
-print(vstack)
+############# SOrt prblm
 
-hstack = np.hstack((baz,bingo))
-print(hstack)
+# foo = np.array([1,7,43,127,13,62,1,3])
+# print(np.sort(foo))
+#
+# boo = np.array([[55,2,12],[43,213,56],[543,63,123]])
+# print(np.sort(boo))
+# print(np.sort(boo,axis=0))
+# print(np.sort(boo,axis=1))
+#
 
-stack = np.stack((foo,bar),axis=0)
-print(stack)
-stack = np.stack((foo,bar),axis=1)
-print(stack)
+# gar = np.array(["d","f","f","c"])
+# print(np.unique(gar))
 
+######### Problem souluton 10x2 Array movie
+
+# genarator = np.random.default_rng(123)
+# ratings = np.round(genarator.uniform(0.0,10.0,size=(10,2)))
+# ratings[[1,2,7,9],[0,0,0,0]]=np.nan
+# print(ratings)
+#
+#
+# x = np.where(np.isnan(ratings[:,0]),ratings[:,1],ratings[:,0])
+# result = np.insert(arr=ratings,values=x,axis=1,obj=2)
+# print(result)
