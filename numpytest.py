@@ -961,3 +961,16 @@ sampData = np.array(dataInAll)
 # print(first_idx)
 # survivors = sortedfish[first_idx]
 # print(survivors)
+
+
+
+########## Employ work solution
+# generator = np.random.default_rng(999)
+# schedules = generator.integers(0,5,size=(32,21))
+# print(schedules)
+#
+# n = np.all(schedules[:,:-1] != schedules[:,1:],axis=1)
+# m = np.nonzero(n)
+# print(m)
+#
+
