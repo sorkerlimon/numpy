@@ -931,13 +931,33 @@ sampData = np.array(dataInAll)
 # print(np.unique(gar))
 
 ######### Problem souluton 10x2 Array movie
-
+#
 # genarator = np.random.default_rng(123)
 # ratings = np.round(genarator.uniform(0.0,10.0,size=(10,2)))
 # ratings[[1,2,7,9],[0,0,0,0]]=np.nan
-# print(ratings)
+# # print(ratings)
 #
 #
 # x = np.where(np.isnan(ratings[:,0]),ratings[:,1],ratings[:,0])
+#
 # result = np.insert(arr=ratings,values=x,axis=1,obj=2)
-# print(result)
+# # print(result)
+
+
+
+####### Fish problem
+# locs = np.array([[0,0,0],[1,1,2],[0,0,0],[2,1,3],[5,5,4],[5,0,0],[0,0,0,],[2,1,3],[2,1,4],[1,2,3]])
+# print(locs)
+#
+# genarator = np.random.default_rng(1010)
+# weights = genarator.normal(loc=5,size=10)
+#
+# print(weights)
+#
+# sortedfish = np.argsort(weights)[::-1]
+# print(sortedfish)
+# uniques,first_idx = np.unique(locs[sortedfish],axis=0,return_index=True)
+# print(uniques)
+# print(first_idx)
+# survivors = sortedfish[first_idx]
+# print(survivors)
