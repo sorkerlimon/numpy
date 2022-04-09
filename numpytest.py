@@ -974,3 +974,43 @@ sampData = np.array(dataInAll)
 # print(m)
 #
 
+
+
+# squid = np.arange(12).reshape(3,4)
+# print(squid[:,:2])
+# s = squid.__array_interface__
+# print(s)
+
+
+
+############# Deparment manage problekm solve
+# generator = np.random.default_rng(2357)
+# jim = np.round(generator.normal(100,5,(5,2,4)))
+# # print(jim)
+#
+# blocks = np.array([
+#     [[0,2],[1,3]],
+#     [[0,2],[1,3]],
+#     [[0,2],[1,3]],
+#     [[0,2],[1,3]],
+#     [[0,2],[1,3]],
+# ])
+# # print(blocks)
+#
+# pops = np.array([
+#     [100,105],
+#     [110,92],
+#     [95,99],
+#     [89,107],
+#     [101,98]
+# ])
+# # print(pops)
+#
+# jim_pops = jim[np.arange(5)[:,None],blocks[:,:,0],blocks[:,:,1]]
+# # print([np.arange(5)[:,None]])
+# # print(blocks[:,:,0])
+# # print(blocks[:,:,1])
+# print(jim_pops)
+# ownstmps = np.sum(np.abs(pops-jim_pops)/pops>=0.10)
+#
+# print(ownstmps)
