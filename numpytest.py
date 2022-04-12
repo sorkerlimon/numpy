@@ -1014,3 +1014,20 @@ sampData = np.array(dataInAll)
 # ownstmps = np.sum(np.abs(pops-jim_pops)/pops>=0.10)
 #
 # print(ownstmps)
+
+
+
+
+####### Given 10x10x10
+
+# chew = np.zeros((10,10,10))
+# # print(chew[:2])
+#
+# i = np.array([1,3,5,7,9])
+# j = np.array([0,2,4,6,8])
+# k = np.array([2,3,4,5,7])
+#
+# chew[i[:,None,None],j[None,:,None],k[None,None,:]] = 1
+# print(chew)
+
+
