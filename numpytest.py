@@ -33,6 +33,9 @@ from timeit import default_timer as timer
 
 # l1 = [1,2,3]
 # l2 = [4,5,6]
+#
+# dot = np.dot(l1,l2)
+# print(dot)
 # a = np.array(l1)
 # b = np.array(l2)
 #
@@ -111,15 +114,16 @@ from timeit import default_timer as timer
 # 17.56
 
 
-# a = np.array([[1,2,3],[3,4,5]])
-# # b  = np.array([[1,2],[3,4]])
+a = np.array([[1,2,3],[3,4,5]])
+b = np.array([[1,2],[3,4]])
 # # # print(a)
 # # # print(a.shape)
+# print(a.shape)
 # # #
 #
 # print(a[0:,2])
 # # b = a.T
-
+# print(a[0:,1])
 # # print(b)
 # # print(b.shape)
 # # print(b[1:,0])
@@ -271,9 +275,9 @@ from timeit import default_timer as timer
 ######### Linear Algenbra
 # a = np.array([[1,2],[3,4]])
 # eigenvalu, eivector = np.linalg.eig(a)
-#
-# # print(eigenvalu)
-# # print(eivector)
+# #
+# print(eigenvalu)
+# print(eivector)
 #
 # b = eivector[:,0] * eigenvalu[0]
 # print(b)
@@ -346,9 +350,16 @@ from timeit import default_timer as timer
 # print(filedata[filedata > 4])
 
 
-# a  = np.array([[1,2,3,4,5],[6,7,8,9,10],[11,12,13,14,15],[16,17,18,19,20],[21,22,23,24,25],[26,27,28,29,30],])
-# print(a)
-# print(a[2:4,0:2])
+
+# a = np.array([[1,2,3,4,5],
+#               [6,7,8,9,10],
+#               [11,12,13,14,15],
+#               [16,17,18,19,20],
+#               [21,22,23,24,25],
+#               [26,27,28,29,30],])
+# # print(a)
+# # print(a[2:4,0:2])
+# print(a[3:5,1::2])
 # print(a[[0,4,5],3:])
 
 
@@ -364,17 +375,18 @@ from timeit import default_timer as timer
 # print(np.sin(b))
 # print(b.fill(-4.8))
 #
-# a = np.array([[0,1,2,3],[10,11,12,13]])
+# a = np.array([[0,1,2,3],
+#               [10,11,12,13]])
 # print(a)
 # a[1,3] = -1
-# # print(a[1,3:4])
+# print(a[1,3:4])
 # print(a)
 
 # a = np.arange(25).reshape(5,5)
 # print(a)
+# # #
+# print(a[::2,::2])
 # #
-# # print(a[::2])
-#
 # # print(a[3:,2:])
 #
 # # print(a[:,2])
@@ -382,7 +394,7 @@ from timeit import default_timer as timer
 
 # a = np.arange(25).reshape(5,5)
 # print(a)
-#
+
 # # red = a[:,1::2]
 # # print(red)
 # #
@@ -1031,3 +1043,5 @@ sampData = np.array(dataInAll)
 # print(chew)
 
 
+for i in range(10):
+    print(i)
