@@ -1043,5 +1043,3 @@ sampData = np.array(dataInAll)
 # print(chew)
 
 
-for i in range(10):
-    print(i)
