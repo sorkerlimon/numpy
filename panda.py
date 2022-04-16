@@ -38,13 +38,13 @@ import pandas as pd
 # result = pd.DataFrame(data=dicr1)
 # print(result)
 
-dataCollect = np.arange(50).reshape(10,5)
+# dataCollect = np.arange(50).reshape(10,5)
 # print(dataCollect)
 
-columname = ["Column_"+str(name) for name in  range(5)]
+# columname = ["Column_"+str(name) for name in  range(5)]
 # print(columname)
 
-data_and_column = pd.DataFrame(dataCollect,columns=columname)
+# data_and_column = pd.DataFrame(dataCollect,columns=columname)
 # print(data_and_column)
 
 
@@ -63,4 +63,31 @@ data_and_column = pd.DataFrame(dataCollect,columns=columname)
 # print(result)
 
 
+data = pd.read_csv("C:/Users/21100002/Desktop/Pandas/Indian Data Set/indian_liver_patient.csv")
+# print(data)
+# print(data.head(10))
+# print(data.tail(10))
+# print(data.columns)
+# print(data.dtypes)
+# print(data.describe()) ## All valu details like count, mean, std ,min,max
+# print(data.index)  ### for check start valu end value
 
+# print(data["Age"])
+# print(type(data["Age"]))
+
+
+# print(data["Direct_Bilirubin"])
+# print(type(data["Direct_Bilirubin"]))     ### Acces one column
+
+
+# print(data[["Total_Bilirubin","Direct_Bilirubin"]])   #### Access  2 colum like that
+ # print(data[50:60])  ######## Work on index
+
+############# Label ways acces
+
+# print(data.loc[1])  ### It,s comes line series way
+# print(data.loc[[1]])  ### It,s comes line tabuler way
+# print(data.loc[:3,["Age","Gender"]])
+
+
+########################## Filtering and selection data
