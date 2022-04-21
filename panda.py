@@ -91,3 +91,29 @@ data = pd.read_csv("C:/Users/21100002/Desktop/Pandas/Indian Data Set/indian_live
 
 
 ########################## Filtering and selection data
+
+# data = pd.read_csv("C:/Users/21100002/Desktop/Pandas/Indian Data Set/indian_liver_patient.csv")
+# # print(data.head())
+# #
+# datafile = (data["Total_Bilirubin"].head(n=5)) > 2
+# print(datafile)
+#
+#
+# datafile2 = data["Total_Bilirubin"] < 2
+# print(datafile[datafile2])
+
+
+
+#
+# #### Missing value
+# data = pd.read_csv("C:/Users/21100002/Desktop/Pandas/Indian Data Set/indian_liver_patient.csv")
+# # print(data.describe())
+# print(data.isnull().sum())
+# print("Total_Bilirubin",data["Total_Bilirubin"].isnull().sum())
+#
+# data["Total_Bilirubin"] = data["Total_Bilirubin"].fillna(0)
+# print(data["Total_Bilirubin"])
+#
+#
+#
+#
