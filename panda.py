@@ -113,7 +113,51 @@ data = pd.read_csv("C:/Users/21100002/Desktop/Pandas/Indian Data Set/indian_live
 #
 # data["Total_Bilirubin"] = data["Total_Bilirubin"].fillna(0)
 # print(data["Total_Bilirubin"])
+
+
+
+##### Mathmatical Operations
+#
+# data = pd.read_csv("C:/Users/21100002/Desktop/Pandas/Indian Data Set/indian_liver_patient.csv")
+# print(data["Total_Bilirubin"].sum())
+# print(data["Total_Bilirubin"].var())
+# print(data["Total_Bilirubin"].mean())
+
+
+
+######## Map apply applymap in panda
+
+data = pd.read_csv("C:/Users/21100002/Desktop/Pandas/Indian Data Set/indian_liver_patient.csv")
+# seriesobj = data["Total_Bilirubin"]
+# # print(seriesobj.head())
+#
+# pandasDFseriesobj = data[["Total_Bilirubin"]]
+# # print(pandasDFseriesobj.head())
 #
 #
+# print(seriesobj.map(str))
+# print(seriesobj.map(str)[0])
+
+#
+# dictCheck = {"a":10,"b":20,"c":30}
+# samNumpy = np.array(["a","b","c"])
+# dataFSamp = pd.DataFrame(samNumpy,columns=["columName"])
+# print(dataFSamp)
+#
+# dataFSamp1 = dataFSamp["columName"].map(dictCheck)
+# print(dataFSamp1)
 #
 #
+# def checkfunc(x):
+#     return dictCheck[x]
+#
+# dataFSamp2 = dataFSamp["columName"].map(checkfunc)
+# print(dataFSamp2)
+
+
+
+
+### Apply with Lambda
+
+
+
