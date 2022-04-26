@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import datetime
 
 # data = np.arange(5000).reshape(100,50)
 # # print(data)
@@ -156,8 +157,46 @@ data = pd.read_csv("C:/Users/21100002/Desktop/Pandas/Indian Data Set/indian_live
 
 
 
-
 ### Apply with Lambda
+data = pd.read_csv("C:/Users/21100002/Desktop/Pandas/Indian Data Set/indian_liver_patient.csv")
+print(data.head())
+# print(data["Total_Bilirubin"])
+#
+# def checkfun(x):
+#     if x < 2:
+#         return "G2"
+#     elif x < 4:
+#         return "G4"
+#     elif x < 6:
+#         return "G6"
+#     else:
+#         return "No"
+
+# useLambda = data["Total_Bilirubin"].apply(lambda x: checkfun(x))
+# print(useLambda)
+#
+# checkfun = data["Total_Bilirubin"].apply(checkfun)
+# print(checkfun)
+#
+# map = data["Total_Bilirubin"].map(checkfun)
+# print(map)
+#
+
+# a = datetime.datetime.now()
+# checkfun = data["Total_Bilirubin"].apply(checkfun)
+# b = datetime.datetime.now()
+# print(b - a )
 
 
+# def somefunc(x,y):
+#     try:
+#         return (x/y)
+#     except:
+#         return 0
+#
+#
+# fullData = data[["Total_Bilirubin","Albumin"]].apply(lambda x: somefunc(*x),axis=1)
+# print(fullData)
 
+
+########################### Merge , join ,Concate , Append in pandas
