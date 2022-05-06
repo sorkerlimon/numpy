@@ -200,19 +200,43 @@ data = pd.read_csv("C:/Users/21100002/Desktop/Pandas/Indian Data Set/indian_live
 
 
 ########################### Merge , join ,Concate , Append in pandas
+#
+# table1 = pd.DataFrame(data={'column1': [1, 2, 3, 4, 5], 'column2': [6, 7, 8, 9, 10]})
+# table2 = pd.DataFrame(data={'column1': [11, 12, 13, 14, 15], 'column2': [16, 17, 18, 19, 20]})
+# table3 = pd.DataFrame(data={'column3': [1, 1, 3, 4, 5], 'column4': [6, 7, 8, 9, 10]})
+#
+#
+# caoncantation = pd.concat([table1,table2])
+# # print(caoncantation)
+#
+# caoncantation1 = pd.concat([table1,table3],axis=1)
+# # print(caoncantation1)
+#
+# caoncantation1["different"] = caoncantation1["column4"]- caoncantation1["column1"]
+# print(caoncantation1)
+#
 
-table1 = pd.DataFrame(data={'column1': [1, 2, 3, 4, 5], 'column2': [6, 7, 8, 9, 10]})
-table2 = pd.DataFrame(data={'column1': [11, 12, 13, 14, 15], 'column2': [16, 17, 18, 19, 20]})
-table3 = pd.DataFrame(data={'column3': [1, 1, 3, 4, 5], 'column4': [6, 7, 8, 9, 10]})
 
 
-caoncantation = pd.concat([table1,table2])
-# print(caoncantation)
 
-caoncantation1 = pd.concat([table1,table3],axis=1)
-# print(caoncantation1) 
 
-caoncantation1["different"] = caoncantation1["column4"]- caoncantation1["column1"]
-print(caoncantation1)
+
+
+
+
+
+########## https://www.youtube.com/watch?v=XiFygkOVrA4&list=PLmmRdcVKtuR6yfL30t9rSFV9WPJyJUDrg&index=29
+
+### Advance panda part 2
+
+
+
+
+
+
+
+
+
+
 
 
